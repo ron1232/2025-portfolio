@@ -74,7 +74,7 @@ body {
 
 @layer utilities {
   .app-card {
-    @apply h-[270px] w-[540px] rounded-xl bg-white hover:scale-105 transition-all duration-200;
+    @apply w-[540px] bg-white rounded-xl hover:scale-105 transition-all duration-200;
   }
 
   .nav-hover-btn {
