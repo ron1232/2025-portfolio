@@ -23,7 +23,7 @@ const Features = () => {
       const titleAnimation = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 90%",
+          start: "100 bottom",
           end: "center center",
           toggleActions: "play none none reverse",
         },

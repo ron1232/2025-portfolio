@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -41,35 +41,6 @@ const AppCard: React.FC<AppCardProps> = ({ imgSrc, href }) => {
     if (!href) return;
     window.open(href, "_blank")?.focus();
   };
-
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const elements = gsap.utils.toArray(".animated-sub-word");
-
-      gsap.set(elements, {
-        opacity: 0,
-      });
-
-      const titleAnimation = gsap.timeline({
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 90%",
-          end: "center center",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      titleAnimation.to(elements, {
-        opacity: 1,
-        ease: "power2.inOut",
-        stagger: 0.02,
-      });
-    }, containerRef);
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <div
