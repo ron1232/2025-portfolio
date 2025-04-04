@@ -50,20 +50,6 @@ const Features = () => {
           className="flex flex-wrap justify-center gap-10"
         >
           <AppCard
-            imgSrc="/img/enter-catalog.png"
-            title="Enter Catalog"
-            description="A users catalog of the company ENTER, which provides a professional, supportive and promoting space for people with employment barriers."
-            technologies={[
-              "Angular",
-              "Angular Material",
-              "SASS",
-              "Nest.js",
-              "TypeScript",
-              "PostgreSQL",
-              "JWT & Passport",
-            ]}
-          />
-          <AppCard
             imgSrc="/img/pitangoux.png"
             href="https://www.pitangoux.com/"
             title="PitangoUX"
@@ -150,6 +136,20 @@ const Features = () => {
               "Material UI",
               "TailwindCSS",
               "SASS",
+            ]}
+          />
+          <AppCard
+            imgSrc="/img/enter-catalog.png"
+            title="Enter Catalog"
+            description="A users catalog of the company ENTER, which provides a professional, supportive and promoting space for people with employment barriers."
+            technologies={[
+              "Angular",
+              "Angular Material",
+              "SASS",
+              "Nest.js",
+              "TypeScript",
+              "PostgreSQL",
+              "JWT & Passport",
             ]}
           />
           <AppCard
