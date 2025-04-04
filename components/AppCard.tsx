@@ -33,7 +33,7 @@ const AppCard: React.FC<AppCardProps> = ({
         <div className="app-card-description">
           <span dangerouslySetInnerHTML={{ __html: description }} />
         </div>
-        <p className="mt-1.5 font-medium">Technologies:</p>
+        <p className="mt-1.5 font-bold">Technologies:</p>
         <ul className="app-card-technologies">
           {technologies.map((technology) => (
             <li key={technology}>{technology}.</li>
