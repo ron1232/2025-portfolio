@@ -52,7 +52,7 @@ const Features = () => {
           <AppCard
             imgSrc="/img/enter-catalog.png"
             title="Enter Catalog"
-            description="A users catalog for the company ENTER, which provides a professional, supportive and promoting space for people with employment barriers."
+            description="A users catalog of the company ENTER, which provides a professional, supportive and promoting space for people with employment barriers."
             technologies={[
               "Angular",
               "Angular Material",
