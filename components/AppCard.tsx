@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PiCursorClickLight } from "react-icons/pi";
 
 interface AppCardProps {
@@ -16,20 +17,25 @@ const AppCard: React.FC<AppCardProps> = ({
   description,
   technologies,
 }) => {
-  const handleClick = () => {
-    if (!href) return;
-    window.open(href, "_blank")?.focus();
-  };
-
   return (
     <div className="app-card">
       <div className="app-card-info">
-        <p className="app-card-title" onClick={handleClick}>
-          <span className="relative">
-            {title}
-            <PiCursorClickLight className="absolute right-[-17px] top-4" />
-          </span>
-        </p>
+        {href ? (
+          <Link className="app-card-title" href={href} target="_blank">
+            <span className="relative">
+              {title}
+              <PiCursorClickLight className="absolute right-[-17px] top-4" />
+            </span>
+          </Link>
+        ) : (
+          <p className="app-card-title">
+            <span className="relative">
+              {title}
+              <PiCursorClickLight className="absolute right-[-17px] top-4" />
+            </span>
+          </p>
+        )}
+
         <div className="app-card-description">
           <span dangerouslySetInnerHTML={{ __html: description }} />
         </div>
@@ -41,14 +47,25 @@ const AppCard: React.FC<AppCardProps> = ({
         </ul>
       </div>
       <div className="app-card-image-container">
-        <Image
-          width={540}
-          height={270}
-          src={imgSrc}
-          alt=""
-          className="cursor-pointer rounded-xl"
-          onClick={handleClick}
-        />
+        {href ? (
+          <Link href={href} target="_blank">
+            <Image
+              width={540}
+              height={270}
+              src={imgSrc}
+              alt=""
+              className="rounded-xl"
+            />
+          </Link>
+        ) : (
+          <Image
+            width={540}
+            height={270}
+            src={imgSrc}
+            alt=""
+            className="cursor-pointer rounded-xl"
+          />
+        )}
       </div>
     </div>
   );
