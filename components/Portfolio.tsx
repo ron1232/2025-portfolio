@@ -6,6 +6,7 @@ import AnimatedTitle from "./AnimatedTitle";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { appCardList } from "@/utils/appCardList";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,32 +50,9 @@ const Features = () => {
           ref={containerRef}
           className="flex flex-wrap justify-center gap-10"
         >
-          <AppCard
-            imgSrc="/img/recipes-and-ingredients.png"
-            href="https://recipes-and-ingredients.vercel.app/"
-          />
-          <AppCard
-            imgSrc="/img/everx-algoplanner.png"
-            href="https://www.linkedin.com/company/ever-x/"
-          />
-          <AppCard
-            imgSrc="/img/fastjob.png"
-            href="https://fastjob.vercel.app/"
-          />
-          <AppCard
-            imgSrc="/img/outerz.jpg"
-            href="https://github.com/ron1232/outerz/"
-          />
-          <AppCard
-            imgSrc="/img/outerx.jpg"
-            href="https://github.com/ron1232/outerx"
-          />
-          <AppCard
-            imgSrc="/img/pitangoux.png"
-            href="https://www.pitangoux.com/"
-          />
-          <AppCard imgSrc="/img/yna.png" href="https://www.yna.co.il/" />
-          <AppCard imgSrc="/img/enter-catalog.png" />
+          {appCardList.map((appCard) => (
+            <AppCard key={appCard.id} {...appCard} />
+          ))}
         </div>
       </div>
     </div>
