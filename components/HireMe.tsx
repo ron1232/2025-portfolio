@@ -1,3 +1,4 @@
+import AnimatedSocialLinks from "./AnimatedSocialLinks";
 import AnimatedSubtitle from "./AnimatedSubtitle";
 import AnimatedTitle from "./AnimatedTitle";
 
@@ -11,6 +12,7 @@ const Contact = () => {
         <div className="mt-10">
           <AnimatedSubtitle title="ronfiverr123@gmail.com" />
         </div>
+        <AnimatedSocialLinks />
       </div>
     </div>
   );
