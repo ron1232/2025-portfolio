@@ -73,6 +73,15 @@ export const appCardList: AppCardListItem = [
   },
   {
     id: 4,
+    imgSrc: "/img/electronic-music-calculators.png",
+    href: "https://electronic-music-calculators.vercel.app/",
+    title: "Electronic Music Calculators",
+    description:
+      "This site brings together useful calculators for electronic music production, from tuning delay times to musical notes, to calculating kick drum lengths, tempo-based delay times, and BPM-to-Hz conversion.",
+    technologies: ["Next.js 15", "React", "TypeScript", "TailwindCSS"],
+  },
+  {
+    id: 5,
     imgSrc: "/img/everx-algoplanner.png",
     href: "https://www.linkedin.com/company/ever-x/",
     title: "AlgoPlanner",
@@ -90,7 +99,7 @@ export const appCardList: AppCardListItem = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     imgSrc: "/img/fastjob.png",
     href: "https://fastjob.vercel.app/",
     title: "Fast Job",
@@ -108,7 +117,7 @@ export const appCardList: AppCardListItem = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     imgSrc: "/img/enter-catalog.png",
     href: "https://enter-catalog-frontend.onrender.com/",
     title: "Enter Catalog",
@@ -125,7 +134,7 @@ export const appCardList: AppCardListItem = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     imgSrc: "/img/outerz.jpg",
     href: "https://github.com/ron1232/outerz/",
     title: "OuterZ",
@@ -133,7 +142,7 @@ export const appCardList: AppCardListItem = [
     technologies: ["React", "Bootstrap", "Redux", "Express.js", "JWT"],
   },
   {
-    id: 8,
+    id: 9,
     imgSrc: "/img/outerx.jpg",
     href: "https://github.com/ron1232/outerx",
     title: "OuterX",

@@ -97,7 +97,7 @@ body {
   }
 
   .app-card-title {
-    @apply flex items-center text-xl font-bold cursor-pointer mb-1;
+    @apply flex items-center text-lg font-bold cursor-pointer mb-1;
   }
 
   .app-card-technologies {
